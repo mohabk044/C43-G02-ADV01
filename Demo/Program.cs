@@ -123,7 +123,6 @@
             }
             #endregion
 
-
             #region Icomparable  
             //Point[] points = new Point[]
             //{

@@ -97,7 +97,32 @@ namespace Demo
         }
         #endregion
 
+        #region Generic Constrains
+        /* Generics Constrains:
 
+          1- Primary
+               1- General 0 - 1
+                  1- class 
+                  2- Struct
+                  3- Not Null must be not nullable --> C#8
+                  4- Enum --> C#7 (General Type)
+
+               2- Special 
+                  1- User Defiened class (except sealed --> No inherit)
+
+         2- Secondary 
+                1- interface constraints 0 - M
+                ICombarable<T>  
+                T must be class or struct implmenting iComparable
+
+         3- Constructor 
+            paramtrless    0 - 1
+            Must be data type having acceccible [ non - private ]
+            till C#12 Only one
+            cannot use new() [ Constructor Constraint with struct special primary constrain ]
+
+        */
+        #endregion
 
 
 
