@@ -124,8 +124,31 @@
             #endregion
 
 
+            #region Icomparable  
+            //Point[] points = new Point[]
+            //{
+            //    new Point(20,30),
+            //    new Point(10,20),
+            //    new Point(1,2),
+            //    new Point(2,3)
+            //};
 
+            //Helper<Point>.BubbleSort(points);
+            //foreach (Point point in points)
+            //{
+            //    Console.WriteLine(point);
+            //}
 
+            //Employee employee = new Employee() {ID = 1 , Name = "Mohab"  , Salary = 9000};
+            //Employee employee2 = new Employee() { ID = 2, Name = "Ali" , Salary=4500};
+            //Employee employee3 = new Employee() { ID = 3, Name = "Soha", Salary = 6000 };
+            //Employee[] employees = new Employee[] { employee, employee2, employee3 };
+            //Helper<Employee>.BubbleSort(employees);
+            //foreach (Employee emp in employees)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+            #endregion
 
         }
     }
