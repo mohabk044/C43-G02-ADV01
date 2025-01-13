@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class Helper
+    internal class Helper<T>
     {
         #region Before Genarics
         //public static void SWAP(ref object X, ref object Y)
@@ -43,5 +43,42 @@ namespace Demo
             Y = Temp;
         }
         #endregion
+
+        //public static int SearchArray(int[] Arr, int value)
+        //{
+        //    if (Arr is not null)
+        //    {
+        //        for (int i = 0; i < Arr.Length; i++)
+        //        {
+        //            if (value == Arr[i])
+        //            {
+        //                return i;
+        //            }
+        //        }
+        //    }
+        //    return -1;
+        //}
+
+
+
+
+        public static int SearchArray(T[] Arr, T value)
+        {
+            if (Arr is not null)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (value.Equals (Arr[i]) )
+                    {
+                        return i;
+                    }
+                }
+            }
+            return -1;
+        }
+
+
+
+
     }
 }

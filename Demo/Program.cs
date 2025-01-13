@@ -92,6 +92,32 @@
             //-------------------------------
             #endregion
 
+            #region Search Example
+            //int[] Numbers = { 1, 2, 3, 4, 5, 6, 7 };
+            //int Position = Helper.SearchArray(Numbers, 5);
+            //Console.WriteLine(Position);
+
+            //-----------------------------------
+
+            Employee employee01 = new Employee(10, "Mohab", 3000);
+            Employee employee02 = new Employee(5, "Ali", 7000);
+            Employee employee03 = new Employee(7, "shimaa", 9000);
+
+            Employee[] employees =
+            {
+                employee01, employee02, employee03
+            };
+
+            int Position = Helper<Employee>.SearchArray(employees, employee03);
+            Console.WriteLine(Position);
+
+            //-----------------------------------
+            #endregion
+
+
+
+
+
         }
     }
 }
