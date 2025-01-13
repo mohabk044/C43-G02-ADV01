@@ -52,6 +52,12 @@ namespace Assignment
                 Console.WriteLine("Exception: " + ex.Message);
             }
 
+            // First Non-Repeating Character
+            Console.WriteLine("\n=== First Non-Repeating Character ===");
+            string input = "swiss";
+            int index = FirstNonRepeatingCharacter.FirstUniqueChar(input);
+            Console.WriteLine($"First unique character index: {index}");
+
         }
     }
 }
