@@ -28,6 +28,13 @@ namespace Assignment
             ReverseArrayList.Reverse(list);
             Console.WriteLine("Reversed ArrayList: " + string.Join(", ", list.ToArray()));
 
+
+            // Even Numbers Filter
+            Console.WriteLine("\n=== Even Numbers Filter ===");
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
+            List<int> evenNumbers = EvenNumbersFilter.GetEvenNumbers(numbers);
+            Console.WriteLine("Even numbers: " + string.Join(", ", evenNumbers));
+
         }
     }
 }
