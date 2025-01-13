@@ -12,6 +12,14 @@ namespace Assignment
             OptimizedBubbleSort.BubbleSort(arr);
             Console.WriteLine("Sorted array: " + string.Join(", ", arr));
 
+
+
+            // Range<T>
+            Console.WriteLine("\n=== Range<T> ===");
+            Range<int> intRange = new Range<int>(10, 20);
+            Console.WriteLine("Is 15 in range: " + intRange.IsInRange(15));
+            Console.WriteLine("Range length: " + intRange.Length());
+
         }
     }
 }
