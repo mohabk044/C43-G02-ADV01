@@ -114,6 +114,15 @@
             //-----------------------------------
             #endregion
 
+            #region Example bubble sort
+            int[] Num = { 2, 5, 3, 1, 6 };
+            Helper<int>.BubbleSort(Num);
+            foreach (int i in Num)
+            {
+                Console.WriteLine(i);
+            }
+            #endregion
+
 
 
 
