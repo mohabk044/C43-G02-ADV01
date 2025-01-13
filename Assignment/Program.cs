@@ -35,6 +35,23 @@ namespace Assignment
             List<int> evenNumbers = EvenNumbersFilter.GetEvenNumbers(numbers);
             Console.WriteLine("Even numbers: " + string.Join(", ", evenNumbers));
 
+
+            // FixedSizeList<T>
+            Console.WriteLine("\n=== FixedSizeList<T> ===");
+            FixedSizeList<int> fixedList = new FixedSizeList<int>(3);
+            fixedList.Add(10);
+            fixedList.Add(20);
+            Console.WriteLine("Element at index 1: " + fixedList.Get(1));
+            try
+            {
+                fixedList.Add(30);
+                fixedList.Add(40); 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception: " + ex.Message);
+            }
+
         }
     }
 }
