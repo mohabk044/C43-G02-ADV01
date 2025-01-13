@@ -20,6 +20,14 @@ namespace Assignment
             Console.WriteLine("Is 15 in range: " + intRange.IsInRange(15));
             Console.WriteLine("Range length: " + intRange.Length());
 
+
+
+            // Reverse ArrayList
+            Console.WriteLine("\n=== Reverse ArrayList ===");
+            ArrayList list = new ArrayList { 1, 2, 3, 4, 5 };
+            ReverseArrayList.Reverse(list);
+            Console.WriteLine("Reversed ArrayList: " + string.Join(", ", list.ToArray()));
+
         }
     }
 }
